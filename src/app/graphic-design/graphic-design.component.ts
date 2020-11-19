@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-
+import { Lightbox } from 'ngx-lightbox';
 
 import { CartService } from '../cart.service';
 
@@ -16,7 +16,7 @@ export class GraphicDesignComponent implements OnInit {
 
   constructor(
     private cartService: CartService,
-    
+    private _lightbox: Lightbox,
   ) {
 
 
@@ -32,13 +32,13 @@ export class GraphicDesignComponent implements OnInit {
   }
 
   open(index: number): void {
-    
+    // open lightbox
 
-   
+    this._lightbox.open(this._albums, index);
   }
  
   close(): void {
-    
+    // close lightbox programmatically
     this._lightbox.close();
   }
 
