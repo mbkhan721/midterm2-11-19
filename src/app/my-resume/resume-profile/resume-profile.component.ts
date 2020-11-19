@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core' ;
 
 @Component({
   selector: 'app-resume-profile',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeProfileComponent implements OnInit {
 
+@Input() profile ;
   constructor() { }
 
   ngOnInit() {

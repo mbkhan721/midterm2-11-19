@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core' ;
+
 
 @Component({
   selector: 'app-resume-work-experience',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume-work-experience.component.css']
 })
 export class ResumeWorkExperienceComponent implements OnInit {
+  
+  @Input() profile ;
 
   constructor() { }
 

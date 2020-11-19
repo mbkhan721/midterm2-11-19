@@ -1,0 +1,15 @@
+<div class="w3-container w3-card w3-white">
+   <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+
+      <!-- Read in an array of Work Experience from JSON-->
+        <div *ngFor="let mySchool of profile.education">
+
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>{{mySchool.institution}}</b></h5>
+          
+           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{mySchool.startDate}} - {{mySchool.endDate}}</h6>
+        <p>{{mySchool.about}}</p>
+     <hr>
+   </div>
+ </div>
+</div>
