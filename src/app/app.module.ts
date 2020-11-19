@@ -17,11 +17,14 @@ import { ResumeEducationComponent } from './my-resume/resume-education/resume-ed
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
 import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
+import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
+    
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
@@ -29,6 +32,7 @@ import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experienc
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'resume', component: MyResumeComponent },
+      { path: 'graphic', component: GraphicDesignComponent },
     ])
   ],
   declarations: [
@@ -43,7 +47,8 @@ import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experienc
     ResumeEducationComponent,
     ResumeFooterComponent,
     ResumeProfileComponent,
-    ResumeWorkExperienceComponent
+    ResumeWorkExperienceComponent,
+    GraphicDesignComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
